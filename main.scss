@@ -1,0 +1,53 @@
+$primary:#5265E1;
+$secondary:#FA5959;
+
+.background-block {
+    position: absolute;
+    background-color: $primary;
+    padding: 180px;
+    border-top-left-radius: 180px;
+    border-bottom-left-radius: 180px;
+    right: 0;
+    width: 35%;
+    margin-top: 100px;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+        padding: 130px;
+        border-top-left-radius: 130px;
+        border-bottom-left-radius: 130px;
+        width: 100%;
+        left: 30%;
+        right: 0;
+        margin-top: 70px;
+    }
+}
+
+.background-block2 {
+    position: absolute;
+    background-color: $primary;
+    padding: 180px;
+    border-top-right-radius: 180px;
+    border-bottom-right-radius: 180px;
+    left: 0;
+    width: 35%;
+    margin-top: 100px;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+        padding: 130px;
+        border-top-right-radius: 130px;
+        border-bottom-right-radius: 130px;
+        width: 85%;
+        left: 0;
+        right: 30%;
+        margin-top:80px;
+    }
+}
+
+.image-container{
+    position: relative;
+    z-index: 2;
+}
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss"
